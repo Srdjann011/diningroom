@@ -1,0 +1,27 @@
+<div class="col-sm-12">
+	<div class="col-sm-4">
+		<ul class="pagination" ng-repeat="i in rl.pages">
+		  <li ng-click="rl.changePage(i)" ng-class="{'active' : i == rl.page}" ><a ng-href >{{i}}</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-4 form-group">
+		Price from:
+		<input type="number" name="priceFrom" class="form-control" style="margin-top: 3%" ng-model="rl.filter.priceFrom">
+
+
+	</div>	
+	<div class="col-sm-4">
+		Price to:
+		<input type="number" name="priceTo" class="form-control" style="margin-top: 3%" ng-model="rl.filter.priceTo">
+
+
+	</div>
+
+</div>
+<div ng-repeat="rest in rl.restlist" class="col-sm-3"  style="border: 1px solid #ced3db; margin:0.5%; border-radius: 4px; height: 250px;">
+	<h4 ng-click="rl.loadModal(rest)"><a>{{rest.name}}</a></h4>
+	<p>{{rest.description}}</p>
+	<p><rating-directive rating="rest.rating" price="rest.price"></rating-directive></p>
+	<p></p>
+
+</div>

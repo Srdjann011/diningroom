@@ -1,0 +1,51 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th colspan="2">
+				<h2>{{mc.restaurant.name}}</h2>
+				<span class="pull-right">
+					<u>Address</u>
+					<ul>
+						<li>
+							{{mc.restaurant.location}}
+						</li>
+					</ul>
+				</span>
+				<p><u>Working Hours</u></p>
+				<ul>
+					<li ng-show="mc.restaurant.days[1]">
+						Monday: {{mc.restaurant.days[1].opens}} - {{mc.restaurant.days[1].closes}}
+					</li>
+					<li ng-show="mc.restaurant.days[2]">
+						Tuesday: {{mc.restaurant.days[2].opens}} - {{mc.restaurant.days[2].closes}}
+					</li>
+					<li ng-show="mc.restaurant.days[3]">
+						Wednesday: {{mc.restaurant.days[3].opens}} - {{mc.restaurant.days[3].closes}}
+					</li>
+					<li ng-show="mc.restaurant.days[4]">
+						Thursday: {{mc.restaurant.days[4].opens}} - {{mc.restaurant.days[4].closes}}
+					</li>
+					<li ng-show="mc.restaurant.days[5]">
+						Friday: {{mc.restaurant.days[5].opens}} - {{mc.restaurant.days[5].closes}}
+					</li>
+					<li ng-show="mc.restaurant.days[6]">
+						Saturday: {{mc.restaurant.days[6].opens}} - {{mc.restaurant.days[6].closes}}
+					</li>
+					<li ng-show="mc.restaurant.days[7]">
+						Sunday: {{mc.restaurant.days[7].opens}} - {{mc.restaurant.days[7].closes}}
+					</li>
+				</ul>
+			</th>
+		</tr>
+		<tr>
+			<th>Name</th>
+			<th>Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in mc.menu.items">
+			<td>{{item.name}}</td>
+			<td>{{item.price}}</td>
+		</tr>
+	</tbody>
+</table>

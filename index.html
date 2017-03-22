@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Dining Room</title>
+	<!-- Assets -->	
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/angular/angular.js"></script>
+	<script type="text/javascript" src="assets/js/angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="assets/js/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript" src="assets/js/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+	<!-- Components -->
+	<script type="text/javascript" src="app/app.module.js"></script>
+	<script type="text/javascript" src="app/components/core/core.module.js"></script>
+	<script type="text/javascript" src="app/components/core/core.router.js"></script>
+	
+	<script type="text/javascript" src="app/components/restaurant/restaurant.module.js"></script>
+	<script type="text/javascript" src="app/components/restaurant/restaurant.router.js"></script>
+	<script type="text/javascript" src="app/components/restaurant/restaurant.controller.js"></script>
+	<script type="text/javascript" src="app/components/restaurant/restaurant.service.js"></script>
+	<script type="text/javascript" src="app/components/shared/shared.module.js"></script>
+	<script type="text/javascript" src="app/components/shared/rating.directive.js"></script>
+	<script type="text/javascript" src="app/components/restaurant/menu.controller.js"></script>
+
+
+</head>
+<body ng-app="appModule">
+	<div class="container-fluid">
+		<div ui-view="header"></div>
+		
+	</div>
+</body>
+</html>
+
+

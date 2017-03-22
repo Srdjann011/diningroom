@@ -1,0 +1,28 @@
+<div class="container-fluid">
+	<img src="assets/img/cover.jpg" style="width: 100%;">
+</div>
+
+<div class="container-fluid col-sm-3">
+  
+  <div class="list-group">
+    <a href="#" class="list-group-item ">
+      	<h4 class="list-group-item-heading">Dining room</h4>
+    </a>
+    <a href="#" class="list-group-item">Home</a>
+    <a ui-sref="main.restlist({cuisine})"  class="list-group-item">Restaurants</a>
+    <a ui-sref="main.restlist({cuisine})" class="list-group-item">All</a>
+    <a ui-sref="main.restlist({cuisine : 'german'})" class="list-group-item">German</a>
+    <a ui-sref="main.restlist({cuisine : 'chinese'})"  class="list-group-item">Chinese</a>
+    <a ui-sref="main.restlist({cuisine : 'american'})" class="list-group-item">American</a>
+    <a ui-sref="main.restlist({cuisine : 'indian'})" class="list-group-item">Indian</a>
+    <a ui-sref="main.restlist({cuisine : 'pizza'})" class="list-group-item">Pizza</a>
+    <a ui-sref="main.restlist({cuisine : 'vegeterian'})" class="list-group-item">Vegeterian</a>
+    <a ui-sref="main.about" class="list-group-item">About</a>
+  </div>
+</div>
+<div class="col-sm-9 container-fluid" ui-view="content">
+
+		
+
+	
+</div>
